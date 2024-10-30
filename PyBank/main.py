@@ -55,12 +55,12 @@ with open(file_to_load) as financial_data:
 #calculate average change by dividing changeTotal by changeCount, round up to 2 decimal places
 averageChange = round(changeTotal/changeCount,2)
 # Generate the output summary
-output = (f"Financial Analysis\n"
-          "------------------------\n"
-          f"Total Months: {total_months}\n"
-          f"Total: ${total_net}\n"
-          f"Average Change:${averageChange}\n"
-          f"Greatest Increase in Profits: {greatestIncrease[0]} $({greatestIncrease[1]})\n"
+output = (f"Financial Analysis\n\n"
+          "------------------------\n\n"
+          f"Total Months: {total_months}\n\n"
+          f"Total: ${total_net}\n\n"
+          f"Average Change:${averageChange}\n\n"
+          f"Greatest Increase in Profits: {greatestIncrease[0]} $({greatestIncrease[1]})\n\n"
           f"Greatest Decrease in Profits: {greatestDecrease[0]} $({greatestDecrease[1]})")
 # Print the output
 print(output)
